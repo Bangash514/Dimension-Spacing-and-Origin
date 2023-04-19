@@ -3,18 +3,11 @@ Created on Mon Apr 17 04:26:04 2023
 
 @author: admin
 """
-#Find the following; Dimensions, spacing and Origin.
-
-# Load the images as NumPy arrays
-#img_x = np.array(Image.open('C:/Users/admin/Downloads/OpenCv projects/Experiment/April 4th, 2023/3 Sides Images/Capture.PNG'))
-#img_y = np.array(Image.open('C:/Users/admin/Downloads/OpenCv projects/Experiment/April 4th, 2023/3 Sides Images/horiz.PNG'))
-#img_z = np.array(Image.open('C:/Users/admin/Downloads/OpenCv projects/Experiment/April 4th, 2023/3 Sides Images/verti.PNG'))
-
 import vtk
 
 # Create a DICOM reader object
 reader = vtk.vtkDICOMImageReader()
-reader.SetDirectoryName('C:/Users/admin/Downloads/OpenCv projects/Experiment/April 4th, 2023/3 Sides Images')
+reader.SetDirectoryName('Folder/Directory')
 reader.Update()
 
 # Get the image data
